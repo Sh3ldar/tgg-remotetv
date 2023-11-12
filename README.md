@@ -1,4 +1,4 @@
-[Join our Discord](https://discord.gg/yflip)
+[Join our Discord](https://discord.gg/yflip)  
 [Showcase video](https://youtu.be/nxs7fEmt8g4)
 
 ## Installation
