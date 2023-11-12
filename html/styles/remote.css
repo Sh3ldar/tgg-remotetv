@@ -1,0 +1,284 @@
+body {
+    overflow: hidden;
+    user-select: none !important;
+
+    margin: 0;
+}
+
+.container {
+    position: relative;
+
+    height: 100vh;
+}
+
+.remotecontrol-container {
+    display: none;
+
+    position: absolute;
+    height: 783px;
+    width: 34rem;
+    bottom: 40px;
+    right: 0;
+}
+
+.remote-item {
+    position: absolute;
+
+    height: 670px;
+    bottom: 0;
+    width: 150px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.remotecontrol-img {
+    position: absolute;
+    height: inherit;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    z-index: 5;
+}
+
+.holodisplay-container {
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.holodisplay {
+    width: 25rem;
+}
+
+.video-id {
+    position: absolute;
+    z-index: 10;
+    width: 210px;
+    height: 20px;
+    bottom: 64px;
+    overflow: hidden;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.video-id input {
+    text-align: center;
+    color: #141414ba;
+    width: 100%;
+}
+
+input[type="text"] {
+    position: absolute;
+    background: rgba(209, 209, 207, 0);
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    color: #141414ba;
+}
+
+.onoff-indicator {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    top: 28px;
+    right: 73px;
+    opacity: 0.4;
+    background-color: #ff0000;
+
+    z-index: 10;
+}
+
+#volume-indicator {
+    position: absolute;
+    height: 130px;
+    width: 23px;
+    left: 5px;
+    background: #9c9c9c;
+    top: 235px;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    z-index: 4;
+    border-radius: 25px;
+}
+
+.rod-container {
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#rod-content {
+    height: 0;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px;
+
+    transition-duration: .2s;
+    transition-timing-function: linear;
+}
+
+#v-mute {
+    display: none;
+}
+
+#v-mute,
+#v-sound {
+    position: absolute;
+    height: 15px;
+
+    bottom: 5px;
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 1;
+}
+
+.btn {
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 25px;
+    transition: all 0.01s linear;
+
+    z-index: 10;
+}
+
+.btn:hover {
+    background: #ffffff1f;
+
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #2d2f2d42;
+    box-shadow: -1px -1px 1px 0px #666;
+    transition: all 0.20s linear;
+    transform: translateX(1px);
+}
+
+#power-btn {
+    width: 35px;
+    height: 22px;
+    top: 20px;
+    left: 13px;
+}
+
+#browser-mouse {
+    right: 14.6px;
+    top: 76px;
+}
+
+#tv-switch {
+    top: 76px;
+    left: 14px;
+}
+
+#ok-btn {
+    width: 56px;
+    height: 56px;
+    top: 143.5px;
+    left: 46.5px;
+    border-radius: 50%;
+    transition: all 0.01s linear;
+}
+
+#back-btn {
+    position: absolute;
+    top: 231.5px;
+    left: 14px;
+}
+
+#play-btn {
+    position: absolute;
+    top: 231.5px;
+    right: 14.6px;
+}
+
+#home-btn {
+    position: absolute;
+    top: 245.5px;
+    right: 59.3px;
+}
+
+#volume-up {
+    width: 58.5px;
+    height: 7px;
+    bottom: 366.5px;
+    left: 16px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#volume-down {
+    width: 58.5px;
+    height: 7px;
+    bottom: 359.5px;
+    left: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#channel-up {
+    width: 59.5px;
+    height: 7px;
+    bottom: 366.5px;
+    right: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#channel-down {
+    width: 59.5px;
+    height: 7px;
+    bottom: 359.5px;
+    right: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#sync-btn {
+    bottom: 286.8px;
+    right: 14.6px;
+}
+
+#yt-btn {
+    position: absolute;
+    bottom: 308px;
+    right: 59.3px;
+}
+
+#browser-btn {
+    bottom: 264px;
+    right: 59.3px;
+}
+
+#twitch-btn {
+    bottom: 286.8px;
+    left: 15px;
+}

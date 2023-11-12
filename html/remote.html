@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamsGG - remotetv</title>
+
+    <link rel="stylesheet" href="./styles/remote.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="remotecontrol-container">
+
+            <div class="remote-item">
+                <img src="./img/remotecontrol.png" alt="" class="remotecontrol-img">
+
+                <div class="volume-indicator-container" id="volume-indicator">
+                    <div class="rod-container">
+                        <img src="./img/volume-mute.png" alt="" id="v-mute">
+                        <img src="./img/volume-up.png" alt="" id="v-sound">
+                        <div id="rod-content">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="onoff-indicator"></div>
+
+                <div class="btn" id="power-btn"></div>
+
+                <div class="btn" id="ok-btn"></div>
+
+                <div class="btn" id="tv-switch"></div>
+                <div class="btn" id="browser-mouse"></div>
+
+                <div class="btn" id="back-btn"></div>
+                <div class="btn" id="play-btn"></div>
+                <div class="btn" id="home-btn"></div>
+
+                <div class="btn" id="volume-up"></div>
+                <div class="btn" id="volume-down"></div>
+
+                <div class="btn" id="channel-up"></div>
+                <div class="btn" id="channel-down"></div>
+
+                <div class="btn" id="yt-btn"></div>
+                <div class="btn" id="sync-btn"></div>
+                <div class="btn" id="browser-btn"></div>
+                <div class="btn" id="twitch-btn"></div>
+            </div>
+
+            <div class="holodisplay-container">
+                <div class="video-id">
+                    <input id="video-id-input" type="text" name="video-id-input" placeholder="Type a URL">
+                </div>
+
+                <img src="./img/remotecontrol-holo.png" alt="" class="holodisplay">
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/remote.js" type="text/javascript"></script>
+</body>
+
+</html>

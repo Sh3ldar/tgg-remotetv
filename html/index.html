@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamsGG - remotetv</title>
+    <link rel="stylesheet" href="styles/tv.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"> </script>
+
+    <script src="scripts/tv.js"></script>
+</head>
+
+<body>
+    <div id="background"></div>
+
+    <div id="channel-info-container">
+        <div class="channel-info">
+            <img id="provider-yt" src="./img/yt-logo.png" height="30" alt="">
+            <img id="provider-tw" src="./img/twitch-logo.png" height="25" alt="">
+            <div id="channel-name"></div>
+        </div>
+        <div id="channel-number"></div>
+    </div>
+
+    <div id="tv-container">
+        <div id="home-screen">
+            <div class="digital-clock"></div>
+
+            <div class="my-apps">My apps</div>
+            <div class="sources">
+                <div class="source">
+                    <img src="./img/youtube.png" height="40" alt="">
+                </div>
+                <div class="source sm">
+                    <img src="./img/twitch.png" height="50" alt="">
+                </div>
+                <div class=" source">
+                    <img src="./img/browser.png" height="55" alt="">
+                </div>
+                <div class=" source sm">
+                    <img src="./img/channels.png" height="55" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div id="youtube-screen">
+            <img src="./img/yt-logo.png" height="160px" alt="">
+        </div>
+
+        <div id="browser-screen">
+            <img src="./img/browser-logo.png" height="180px" alt="">
+        </div>
+
+        <div id="twitch-screen">
+            <img src="./img/twitch-logo.png" height="180px" alt="">
+        </div>
+
+        <div id="tv-screen">
+            <img src="./img/tv-logo.png" height="180px" alt="">
+        </div>
+
+    </div>
+
+    <div id="video-embed"></div>
+</body>
+
+</html>
