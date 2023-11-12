@@ -4,7 +4,7 @@ game "gta5"
 
 author "TeamsGG Development"
 
-version "3.0.1"
+version "3.0.2"
 
 ui_page "html/remote.html"
 
