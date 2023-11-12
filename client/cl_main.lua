@@ -34,11 +34,11 @@ if not Config.UsableItem and Config.Framework == 'Standalone' then
     if Config.CommandDescription and Config.Keybind then
         RegisterKeyMapping('tggtv', Config.CommandDescription, 'keyboard', Config.Keybind)
     else
-        print(Locales[Config.Locale].television.Provide)
+        print('Please provide a command description and keybind in the config.lua file.')
     end
 else
     if Config.Framework == 'Standalone' then
-        print(Locales[Config.Locale].television.Standalone)
+        print('Please disable Config.UsableItem in the config.lua file if you are using the Standalone framework.')
     end
 end
 
@@ -165,11 +165,7 @@ local function EnableRemoteControl(enable)
             end
         end
     else
-        if Config.UseNotify then
-            Notify(string.format(Locales[Config.Locale].television.NoTelevision))
-        else
-            print(Locales[Config.Locale].television.NoTelevision)
-        end
+        print('You are not near a TV.')
     end
 end
 
