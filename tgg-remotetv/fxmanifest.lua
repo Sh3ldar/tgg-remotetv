@@ -56,3 +56,5 @@ escrow_ignore {
 }
 
 lua54 'yes'
+
+dependency "generic_texture_renderer_gfx"

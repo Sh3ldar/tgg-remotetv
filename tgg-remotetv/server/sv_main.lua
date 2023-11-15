@@ -206,9 +206,9 @@ end)
 -- ****************--
 
 AddEventHandler('onResourceStart', function()
-    if not Config.CheckForUpdates then return end
-
     local resource = GetInvokingResource() or GetCurrentResourceName()
+
+    if not Config.CheckForUpdates or not resource == 'tgg-remotetv' then return end
 
     local currentVersion = GetResourceMetadata(resource, 'version', 0)
     if currentVersion then
